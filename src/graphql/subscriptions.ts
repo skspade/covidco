@@ -7,10 +7,7 @@ export const onCreateCompany = /* GraphQL */ `
       id
       name
       description
-      rating {
-        UP
-        DOWN
-      }
+      rating
       logoUrl
       referencesUrl
     }
@@ -22,10 +19,7 @@ export const onUpdateCompany = /* GraphQL */ `
       id
       name
       description
-      rating {
-        UP
-        DOWN
-      }
+      rating
       logoUrl
       referencesUrl
     }
@@ -37,10 +31,7 @@ export const onDeleteCompany = /* GraphQL */ `
       id
       name
       description
-      rating {
-        UP
-        DOWN
-      }
+      rating
       logoUrl
       referencesUrl
     }

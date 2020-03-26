@@ -24,6 +24,16 @@
     uuid "^3.2.1"
     zen-observable "^0.8.6"
 
+"@aws-amplify/auth@1.6.1-ui-preview.4+407089fb":
+  version "1.6.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/auth/-/auth-1.6.1-ui-preview.4.tgz#c185ceeac7bcb204c1cbad62a8b11e464ef14163"
+  integrity sha1-wYXO6se8sgTBy61iqLEeRk7xQWM=
+  dependencies:
+    "@aws-amplify/cache" "1.2.1-ui-preview.4+407089fb"
+    "@aws-amplify/core" "1.3.1-ui-preview.4+407089fb"
+    amazon-cognito-identity-js "3.3.1-ui-preview.4+407089fb"
+    crypto-js "^3.1.9-1"
+
 "@aws-amplify/auth@^2.1.7":
   version "2.1.7"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/auth/-/auth-2.1.7.tgz#e03ba2f50d5e4ced5da312c9f7cc55dbefa3840a"
@@ -34,12 +44,31 @@
     amazon-cognito-identity-js "^3.2.6"
     crypto-js "^3.3.0"
 
+"@aws-amplify/cache@1.2.1-ui-preview.4+407089fb":
+  version "1.2.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/cache/-/cache-1.2.1-ui-preview.4.tgz#14d512b0eab7507c5e00108ceacee75081aead00"
+  integrity sha1-FNUSsOq3UHxeABCM6s7nUIGurQA=
+  dependencies:
+    "@aws-amplify/core" "1.3.1-ui-preview.4+407089fb"
+
 "@aws-amplify/cache@^2.1.7":
   version "2.1.7"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/cache/-/cache-2.1.7.tgz#421eaa819a25d491a73058faa550d665d10ba6d4"
   integrity sha1-Qh6qgZol1JGnMFj6pVDWZdELptQ=
   dependencies:
     "@aws-amplify/core" "^2.2.6"
+
+"@aws-amplify/core@1.3.1-ui-preview.4+407089fb":
+  version "1.3.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/core/-/core-1.3.1-ui-preview.4.tgz#cfccc7efcc573212a3b4e7df7dcf2928bf316297"
+  integrity sha1-z8zH78xXMhKjtOfffc8pKL8xYpc=
+  dependencies:
+    "@aws-crypto/sha256-js" "^0.1.0-preview.2"
+    "@aws-sdk/client-cognito-identity-browser" "^0.1.0-preview.2"
+    "@aws-sdk/credential-provider-cognito-identity" "^0.1.0-preview.2"
+    "@aws-sdk/util-hex-encoding" "^0.1.0-preview.1"
+    "@aws-sdk/util-user-agent-browser" "^0.1.0-preview.2"
+    url "^0.11.0"
 
 "@aws-amplify/core@^2.2.6":
   version "2.2.6"
@@ -88,10 +117,35 @@
   dependencies:
     "@aws-amplify/core" "^2.2.6"
 
+"@aws-amplify/ui-components@0.1.1-ui-preview.4+407089fb":
+  version "0.1.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/ui-components/-/ui-components-0.1.1-ui-preview.4.tgz#a2044ae781063c23cc6c59d07c3f383da3a30787"
+  integrity sha1-ogRK54EGPCPMbFnQfD84PaOjB4c=
+  dependencies:
+    "@aws-amplify/auth" "1.6.1-ui-preview.4+407089fb"
+    "@aws-amplify/core" "1.3.1-ui-preview.4+407089fb"
+    "@aws-amplify/xr" "0.3.1-ui-preview.4+407089fb"
+    emotion "^10.0.9"
+    qrcode "^1.4.4"
+
+"@aws-amplify/ui-react@^0.0.2-ui-preview.5368":
+  version "0.0.2-ui-preview.5368"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/ui-react/-/ui-react-0.0.2-ui-preview.5368.tgz#b2dd21c80d7d295bd43977ba18ae06b221a362bc"
+  integrity sha1-st0hyA19KVvUOXe6GK4GsiGjYrw=
+  dependencies:
+    "@aws-amplify/ui-components" "0.1.1-ui-preview.4+407089fb"
+
 "@aws-amplify/ui@^1.1.6":
   version "1.1.6"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/ui/-/ui-1.1.6.tgz#e0c8f1138464a01903fb4cbd79d9525526f496ef"
   integrity sha1-4MjxE4RkoBkD+0y9edlSVSb0lu8=
+
+"@aws-amplify/xr@0.3.1-ui-preview.4+407089fb":
+  version "0.3.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-amplify/xr/-/xr-0.3.1-ui-preview.4.tgz#3e1530d86d27e20daa62f98a274e9f0c5c3d5805"
+  integrity sha1-PhUw2G0n4g2qYvmKJ06fDFw9WAU=
+  dependencies:
+    "@aws-amplify/core" "1.3.1-ui-preview.4+407089fb"
 
 "@aws-amplify/xr@^1.1.7":
   version "1.1.7"
@@ -107,6 +161,98 @@
   dependencies:
     tslib "^1.9.3"
 
+"@aws-crypto/ie11-detection@^0.1.0":
+  version "0.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-crypto/ie11-detection/-/ie11-detection-0.1.0.tgz#4504fc5bbf61305ebef731a03222201dd314acbb"
+  integrity sha1-RQT8W79hMF6+9zGgMiIgHdMUrLs=
+  dependencies:
+    tslib "^1.9.3"
+
+"@aws-crypto/sha256-browser@^0.1.0-preview.1":
+  version "0.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-crypto/sha256-browser/-/sha256-browser-0.1.0.tgz#5f3506234a6d5a9e77fc942294f9e1fae1432423"
+  integrity sha1-XzUGI0ptWp53/JQilPnh+uFDJCM=
+  dependencies:
+    "@aws-crypto/ie11-detection" "^0.1.0"
+    "@aws-crypto/sha256-js" "^0.1.0"
+    "@aws-crypto/supports-web-crypto" "^0.1.0"
+    "@aws-sdk/types" "^0.1.0"
+    "@aws-sdk/util-locate-window" "^0.1.0"
+    "@aws-sdk/util-utf8-browser" "^0.1.0"
+    tslib "^1.9.3"
+
+"@aws-crypto/sha256-js@^0.1.0", "@aws-crypto/sha256-js@^0.1.0-preview.2":
+  version "0.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-crypto/sha256-js/-/sha256-js-0.1.0.tgz#898e18787b0c9dfcd1455629a62e3b581f83dd26"
+  integrity sha1-iY4YeHsMnfzRRVYppi47WB+D3SY=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0"
+    "@aws-sdk/util-utf8-browser" "^0.1.0"
+    tslib "^1.9.3"
+
+"@aws-crypto/supports-web-crypto@^0.1.0":
+  version "0.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-crypto/supports-web-crypto/-/supports-web-crypto-0.1.0.tgz#f8ade27bd341087eb842aa8037bdfb534aba959c"
+  integrity sha1-+K3ie9NBCH64QqqAN737U0q6lZw=
+  dependencies:
+    tslib "^1.9.3"
+
+"@aws-sdk/client-cognito-identity-browser@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/client-cognito-identity-browser/-/client-cognito-identity-browser-0.1.0-preview.2.tgz#51dd1a0bab1178c018122a3d7efd6e77b01954d7"
+  integrity sha1-Ud0aC6sReMAYEio9fv1ud7AZVNc=
+  dependencies:
+    "@aws-crypto/sha256-browser" "^0.1.0-preview.1"
+    "@aws-sdk/config-resolver" "^0.1.0-preview.1"
+    "@aws-sdk/core-handler" "^0.1.0-preview.1"
+    "@aws-sdk/fetch-http-handler" "^0.1.0-preview.1"
+    "@aws-sdk/json-builder" "^0.1.0-preview.1"
+    "@aws-sdk/json-error-unmarshaller" "^0.1.0-preview.2"
+    "@aws-sdk/json-parser" "^0.1.0-preview.1"
+    "@aws-sdk/middleware-content-length" "^0.1.0-preview.1"
+    "@aws-sdk/middleware-header-default" "^0.1.0-preview.1"
+    "@aws-sdk/middleware-serializer" "^0.1.0-preview.1"
+    "@aws-sdk/middleware-stack" "^0.1.0-preview.2"
+    "@aws-sdk/protocol-json-rpc" "^0.1.0-preview.2"
+    "@aws-sdk/retry-middleware" "^0.1.0-preview.1"
+    "@aws-sdk/signature-v4" "^0.1.0-preview.2"
+    "@aws-sdk/signing-middleware" "^0.1.0-preview.2"
+    "@aws-sdk/stream-collector-browser" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    "@aws-sdk/url-parser-browser" "^0.1.0-preview.1"
+    "@aws-sdk/util-base64-browser" "^0.1.0-preview.1"
+    "@aws-sdk/util-body-length-browser" "^0.1.0-preview.1"
+    "@aws-sdk/util-user-agent-browser" "^0.1.0-preview.2"
+    "@aws-sdk/util-utf8-browser" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/config-resolver@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/config-resolver/-/config-resolver-0.1.0-preview.1.tgz#33993091dcb2312835a8178629cb80ac38d8d90f"
+  integrity sha1-M5kwkdyyMSg1qBeGKcuArDjY2Q8=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/core-handler@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/core-handler/-/core-handler-0.1.0-preview.1.tgz#139527b570ca0ae66a0c79a2a41fb685ded61064"
+  integrity sha1-E5UntXDKCuZqDHmipB+2hd7WEGQ=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/credential-provider-cognito-identity@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/credential-provider-cognito-identity/-/credential-provider-cognito-identity-0.1.0-preview.2.tgz#1538c5044d66dd7496605fe481a4cecee0a20430"
+  integrity sha1-FTjFBE1m3XSWYF/kgaTOzuCiBDA=
+  dependencies:
+    "@aws-sdk/client-cognito-identity-browser" "^0.1.0-preview.2"
+    "@aws-sdk/property-provider" "^0.1.0-preview.1"
+    "@aws-sdk/protocol-timestamp" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
 "@aws-sdk/eventstream-marshaller@0.1.0-preview.2":
   version "0.1.0-preview.2"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/eventstream-marshaller/-/eventstream-marshaller-0.1.0-preview.2.tgz#494d0fa41c7a313a83209239006eb5f083af6fe9"
@@ -117,6 +263,15 @@
     "@aws-sdk/util-hex-encoding" "^0.1.0-preview.1"
     tslib "^1.8.0"
 
+"@aws-sdk/fetch-http-handler@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/fetch-http-handler/-/fetch-http-handler-0.1.0-preview.1.tgz#9af957bf206422cb2d767cecedf3709ad16aa679"
+  integrity sha1-mvlXvyBkIsstdnzs7fNwmtFqpnk=
+  dependencies:
+    "@aws-sdk/querystring-builder" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
 "@aws-sdk/is-array-buffer@^0.1.0-preview.1":
   version "0.1.0-preview.1"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/is-array-buffer/-/is-array-buffer-0.1.0-preview.1.tgz#63cd8488faaf1a537817d0ef57fec3aa3bf030c4"
@@ -124,10 +279,200 @@
   dependencies:
     tslib "^1.8.0"
 
+"@aws-sdk/is-iterable@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/is-iterable/-/is-iterable-0.1.0-preview.1.tgz#2941dd15bfbe0988a526bf22d47a2a7b2c336820"
+  integrity sha1-KUHdFb++CYilJr8i1HoqeywzaCA=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/json-builder@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/json-builder/-/json-builder-0.1.0-preview.1.tgz#c9392c9754f96b67604bc88eccf80a2ff5a7a467"
+  integrity sha1-yTksl1T5a2dgS8iOzPgKL/WnpGc=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "^0.1.0-preview.1"
+    "@aws-sdk/is-iterable" "^0.1.0-preview.1"
+    "@aws-sdk/protocol-timestamp" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/json-error-unmarshaller@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/json-error-unmarshaller/-/json-error-unmarshaller-0.1.0-preview.2.tgz#3f1698c057b3410c19898d276a9d53ea7e4ff8f7"
+  integrity sha1-PxaYwFezQQwZiY0nap1T6n5P+Pc=
+  dependencies:
+    "@aws-sdk/response-metadata-extractor" "^0.1.0-preview.2"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    "@aws-sdk/util-error-constructor" "^0.1.0-preview.1"
+
+"@aws-sdk/json-parser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/json-parser/-/json-parser-0.1.0-preview.1.tgz#5c1c31c1b26cc56f23d33f69ba462051a22abe33"
+  integrity sha1-XBwxwbJsxW8j0z9pukYgUaIqvjM=
+  dependencies:
+    "@aws-sdk/protocol-timestamp" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-content-length@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/middleware-content-length/-/middleware-content-length-0.1.0-preview.1.tgz#68c94d19d7c6a60ab65f1d7f65813e1c3d1104b3"
+  integrity sha1-aMlNGdfGpgq2Xx1/ZYE+HD0RBLM=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-header-default@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/middleware-header-default/-/middleware-header-default-0.1.0-preview.1.tgz#7dc2a59f985ab6b3a3c1f388d3c228220d0ee878"
+  integrity sha1-fcKln5hatrOjwfOI08IoIg0O6Hg=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-serializer@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/middleware-serializer/-/middleware-serializer-0.1.0-preview.1.tgz#9c76fc13283192a3137396c1ab092c008b0a30ac"
+  integrity sha1-nHb8EygxkqMTc5bBqwksAIsKMKw=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/middleware-stack@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/middleware-stack/-/middleware-stack-0.1.0-preview.2.tgz#f570e8f5e065a41285518d126a04d59728eb9a76"
+  integrity sha1-9XDo9eBlpBKFUY0SagTVlyjrmnY=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/property-provider@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/property-provider/-/property-provider-0.1.0-preview.1.tgz#2be71a5b1449ced5917307325274f39ed75c2fa6"
+  integrity sha1-K+caWxRJztWRcwcyUnTzntdcL6Y=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/protocol-json-rpc@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/protocol-json-rpc/-/protocol-json-rpc-0.1.0-preview.2.tgz#15913ba1b66511a3590734470461c5d6c2cfb112"
+  integrity sha1-FZE7obZlEaNZBzRHBGHF1sLPsRI=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "^0.1.0-preview.1"
+    "@aws-sdk/response-metadata-extractor" "^0.1.0-preview.2"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    "@aws-sdk/util-error-constructor" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/protocol-timestamp@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/protocol-timestamp/-/protocol-timestamp-0.1.0-preview.1.tgz#909e961e007fd0b33deba81d89b20adb950fb7ea"
+  integrity sha1-kJ6WHgB/0LM966gdibIK25UPt+o=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/querystring-builder@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/querystring-builder/-/querystring-builder-0.1.0-preview.1.tgz#fdc980b76dde24254a2d72e250834224f8a10696"
+  integrity sha1-/cmAt23eJCVKLXLiUINCJPihBpY=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    "@aws-sdk/util-uri-escape" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/querystring-parser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/querystring-parser/-/querystring-parser-0.1.0-preview.1.tgz#128e7f0f52798d628f58b82c10c2fd3df66b540d"
+  integrity sha1-Eo5/D1J5jWKPWLgsEML9PfZrVA0=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/response-metadata-extractor@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/response-metadata-extractor/-/response-metadata-extractor-0.1.0-preview.2.tgz#e437c43638ec1688df84e6041b0ce201caa37c8e"
+  integrity sha1-5DfENjjsFojfhOYEGwziAcqjfI4=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/retry-middleware@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/retry-middleware/-/retry-middleware-0.1.0-preview.1.tgz#1273fa64923a5632bec90379078664606f0381ec"
+  integrity sha1-EnP6ZJI6VjK+yQN5B4ZkYG8Dgew=
+  dependencies:
+    "@aws-sdk/service-error-classification" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/service-error-classification@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/service-error-classification/-/service-error-classification-0.1.0-preview.1.tgz#e504ff7a75f27270ced1408c70d9b8252edd5a1d"
+  integrity sha1-5QT/enXycnDO0UCMcNm4JS7dWh0=
+
+"@aws-sdk/signature-v4@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/signature-v4/-/signature-v4-0.1.0-preview.2.tgz#e2ac8ddd30093f9925ff6f3fbe5fc49a7cb2208f"
+  integrity sha1-4qyN3TAJP5kl/28/vl/EmnyyII8=
+  dependencies:
+    "@aws-sdk/is-array-buffer" "^0.1.0-preview.1"
+    "@aws-sdk/protocol-timestamp" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    "@aws-sdk/util-hex-encoding" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/signing-middleware@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/signing-middleware/-/signing-middleware-0.1.0-preview.2.tgz#c249b157d721c9e3593c00773dd9c552905b317c"
+  integrity sha1-wkmxV9chyeNZPAB3PdnFUpBbMXw=
+  dependencies:
+    "@aws-sdk/signature-v4" "^0.1.0-preview.2"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/stream-collector-browser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/stream-collector-browser/-/stream-collector-browser-0.1.0-preview.1.tgz#f52b8ae4e3d31e8df191727c454300080bb29300"
+  integrity sha1-9SuK5OPTHo3xkXJ8RUMACAuykwA=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/types@^0.1.0":
+  version "1.0.0-beta.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/types/-/types-1.0.0-beta.1.tgz#6441947eb067f5a18425ca1b6713d37f392d50f4"
+  integrity sha1-ZEGUfrBn9aGEJcobZxPTfzktUPQ=
+
 "@aws-sdk/types@^0.1.0-preview.1":
   version "0.1.0-preview.1"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/types/-/types-0.1.0-preview.1.tgz#6119574f873ec9a8ee2e5c1fbfb3ddcc9059c2f3"
   integrity sha1-YRlXT4c+yajuLlwfv7PdzJBZwvM=
+
+"@aws-sdk/url-parser-browser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/url-parser-browser/-/url-parser-browser-0.1.0-preview.1.tgz#9b497c448bdca0784a9798f1a6a6260e13c8936b"
+  integrity sha1-m0l8RIvcoHhKl5jxpqYmDhPIk2s=
+  dependencies:
+    "@aws-sdk/querystring-parser" "^0.1.0-preview.1"
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-base64-browser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-base64-browser/-/util-base64-browser-0.1.0-preview.1.tgz#95455d5ab0b58479c67540c110626392f139c34f"
+  integrity sha1-lUVdWrC1hHnGdUDBEGJjkvE5w08=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-body-length-browser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-body-length-browser/-/util-body-length-browser-0.1.0-preview.1.tgz#9d5126e0a63796f494b286f76ad6b6b2aba22eb7"
+  integrity sha1-nVEm4KY3lvSUsob3ata2squiLrc=
+  dependencies:
+    tslib "^1.8.0"
 
 "@aws-sdk/util-buffer-from@^0.1.0-preview.1":
   version "0.1.0-preview.1"
@@ -137,10 +482,54 @@
     "@aws-sdk/is-array-buffer" "^0.1.0-preview.1"
     tslib "^1.8.0"
 
+"@aws-sdk/util-error-constructor@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-error-constructor/-/util-error-constructor-0.1.0-preview.1.tgz#e945a62e8dd368bf4ea4501fd953618489933b9a"
+  integrity sha1-6UWmLo3TaL9OpFAf2VNhhImTO5o=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
 "@aws-sdk/util-hex-encoding@^0.1.0-preview.1":
   version "0.1.0-preview.1"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-hex-encoding/-/util-hex-encoding-0.1.0-preview.1.tgz#198a5c351bb52baf7b80d5f3ce1cdd000e251bf5"
   integrity sha1-GYpcNRu1K697gNXzzhzdAA4lG/U=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-locate-window@^0.1.0":
+  version "1.0.0-beta.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-locate-window/-/util-locate-window-1.0.0-beta.1.tgz#30fa605073ecf011637770f723be2c08db602726"
+  integrity sha1-MPpgUHPs8BFjd3D3I74sCNtgJyY=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-uri-escape@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-uri-escape/-/util-uri-escape-0.1.0-preview.1.tgz#2036604d6f269fa896e3afeca9c8bbd7078c174f"
+  integrity sha1-IDZgTW8mn6iW46/sqci71weMF08=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-user-agent-browser@^0.1.0-preview.2":
+  version "0.1.0-preview.2"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-user-agent-browser/-/util-user-agent-browser-0.1.0-preview.2.tgz#5bc7cdb3c20892fdd5c46eeddef54ad6c149e1f5"
+  integrity sha1-W8fNs8IIkv3VxG7t3vVK1sFJ4fU=
+  dependencies:
+    "@aws-sdk/types" "^0.1.0-preview.1"
+    tslib "^1.8.0"
+
+"@aws-sdk/util-utf8-browser@^0.1.0":
+  version "1.0.0-beta.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-utf8-browser/-/util-utf8-browser-1.0.0-beta.1.tgz#b13fc7990f1126411f13770d290136b97da90252"
+  integrity sha1-sT/HmQ8RJkEfE3cNKQE2uX2pAlI=
+  dependencies:
+    tslib "^1.8.0"
+
+"@aws-sdk/util-utf8-browser@^0.1.0-preview.1":
+  version "0.1.0-preview.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@aws-sdk/util-utf8-browser/-/util-utf8-browser-0.1.0-preview.1.tgz#21142dfea0b143f8d73e0aabcbcafd76df1691f0"
+  integrity sha1-IRQt/qCxQ/jXPgqry8r9dt8WkfA=
   dependencies:
     tslib "^1.8.0"
 
@@ -320,7 +709,7 @@
   dependencies:
     "@babel/types" "^7.8.3"
 
-"@babel/helper-module-imports@^7.8.3":
+"@babel/helper-module-imports@^7.0.0", "@babel/helper-module-imports@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-module-imports/-/helper-module-imports-7.8.3.tgz#7fe39589b39c016331b6b8c3f441e8f0b1419498"
   integrity sha512-R0Bx3jippsbAEtzkpZ/6FIiuzOURPcMjHp+Z6xPe6DtApDJx+w7UYyOLanZqO8+wKR9G10s/FmHXvxaMd9s6Kg==
@@ -1112,6 +1501,62 @@
   version "10.1.0"
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
+
+"@emotion/cache@^10.0.27":
+  version "10.0.29"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
+  integrity sha1-h+fmT0EsBgEC1Yn+fG3AQub50eA=
+  dependencies:
+    "@emotion/sheet" "0.9.4"
+    "@emotion/stylis" "0.8.5"
+    "@emotion/utils" "0.11.3"
+    "@emotion/weak-memoize" "0.2.5"
+
+"@emotion/hash@0.8.0":
+  version "0.8.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
+  integrity sha1-u7/2iXj+/b5ozLUzvIy+HRr7VBM=
+
+"@emotion/memoize@0.7.4":
+  version "0.7.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/memoize/-/memoize-0.7.4.tgz#19bf0f5af19149111c40d98bb0cf82119f5d9eeb"
+  integrity sha1-Gb8PWvGRSREcQNmLsM+CEZ9dnus=
+
+"@emotion/serialize@^0.11.15", "@emotion/serialize@^0.11.16":
+  version "0.11.16"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/serialize/-/serialize-0.11.16.tgz#dee05f9e96ad2fb25a5206b6d759b2d1ed3379ad"
+  integrity sha1-3uBfnpatL7JaUga211my0e0zea0=
+  dependencies:
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/unitless" "0.7.5"
+    "@emotion/utils" "0.11.3"
+    csstype "^2.5.7"
+
+"@emotion/sheet@0.9.4":
+  version "0.9.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/sheet/-/sheet-0.9.4.tgz#894374bea39ec30f489bbfc3438192b9774d32e5"
+  integrity sha1-iUN0vqOeww9Im7/DQ4GSuXdNMuU=
+
+"@emotion/stylis@0.8.5":
+  version "0.8.5"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/stylis/-/stylis-0.8.5.tgz#deacb389bd6ee77d1e7fcaccce9e16c5c7e78e04"
+  integrity sha1-3qyzib1u530ef8rMzp4WxcfnjgQ=
+
+"@emotion/unitless@0.7.5":
+  version "0.7.5"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  integrity sha1-dyESkcGQCnALinjPr9oxYNdpSe0=
+
+"@emotion/utils@0.11.3":
+  version "0.11.3"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/utils/-/utils-0.11.3.tgz#a759863867befa7e583400d322652a3f44820924"
+  integrity sha1-p1mGOGe++n5YNADTImUqP0SCCSQ=
+
+"@emotion/weak-memoize@0.2.5":
+  version "0.2.5"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
+  integrity sha1-ju2YLi7m9/TkTCU+EpYpgHke/UY=
 
 "@fortawesome/fontawesome-common-types@^0.2.28":
   version "0.2.28"
@@ -2014,6 +2459,15 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+amazon-cognito-identity-js@3.3.1-ui-preview.4+407089fb:
+  version "3.3.1-ui-preview.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/amazon-cognito-identity-js/-/amazon-cognito-identity-js-3.3.1-ui-preview.4.tgz#a69c245fd37e377f46695fd12702f68564d4d3bf"
+  integrity sha1-ppwkX9N+N39GaV/RJwL2hWTU078=
+  dependencies:
+    buffer "4.9.1"
+    crypto-js "^3.1.9-1"
+    js-cookie "^2.1.4"
+
 amazon-cognito-identity-js@^3.2.6:
   version "3.2.6"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/amazon-cognito-identity-js/-/amazon-cognito-identity-js-3.2.6.tgz#8b57095535f8ec1332172061cb4aefa9b79fd8a5"
@@ -2317,6 +2771,14 @@ autoprefixer@^9.7.5:
     postcss "^7.0.27"
     postcss-value-parser "^4.0.3"
 
+aws-amplify-react@^3.1.8:
+  version "3.1.8"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/aws-amplify-react/-/aws-amplify-react-3.1.8.tgz#13cf293c7b878a7d63bda1d579ac09bb9b38e318"
+  integrity sha1-E88pPHuHin1jvaHVeawJu5s44xg=
+  dependencies:
+    qrcode.react "^0.8.0"
+    regenerator-runtime "^0.11.1"
+
 aws-amplify@^2.2.7:
   version "2.2.7"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/aws-amplify/-/aws-amplify-2.2.7.tgz#d8f418e81c97485a298d633891ec17778af4f66f"
@@ -2430,6 +2892,22 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
+babel-plugin-emotion@^10.0.27:
+  version "10.0.29"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/babel-plugin-emotion/-/babel-plugin-emotion-10.0.29.tgz#89d8e497091fcd3d10331f097f1471e4cc3f35b4"
+  integrity sha1-idjklwkfzT0QMx8JfxRx5Mw/NbQ=
+  dependencies:
+    "@babel/helper-module-imports" "^7.0.0"
+    "@emotion/hash" "0.8.0"
+    "@emotion/memoize" "0.7.4"
+    "@emotion/serialize" "^0.11.16"
+    babel-plugin-macros "^2.0.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    convert-source-map "^1.5.0"
+    escape-string-regexp "^1.0.5"
+    find-root "^1.1.0"
+    source-map "^0.5.7"
+
 babel-plugin-istanbul@^5.1.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-5.2.0.tgz#df4ade83d897a92df069c4d9a25cf2671293c854"
@@ -2447,7 +2925,7 @@ babel-plugin-jest-hoist@^24.9.0:
   dependencies:
     "@types/babel__traverse" "^7.0.6"
 
-babel-plugin-macros@2.8.0:
+babel-plugin-macros@2.8.0, babel-plugin-macros@^2.0.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-macros/-/babel-plugin-macros-2.8.0.tgz#0f958a7cc6556b1e65344465d99111a1e5e10138"
   integrity sha512-SEP5kJpfGYqYKpBrj5XU3ahw5p5GOHJ0U5ssOSQ/WBVdwkD2Dzlce95exQTs3jOVWPPKLBN2rlEWkCK7dSmLvg==
@@ -2460,6 +2938,11 @@ babel-plugin-named-asset-import@^0.3.6:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.6.tgz#c9750a1b38d85112c9e166bf3ef7c5dbc605f4be"
   integrity sha512-1aGDUfL1qOOIoqk9QKGIo2lANk+C7ko/fqH0uIyC71x3PEGz0uVP8ISgfEsFuG+FKmjHTvFK/nNM8dowpmUxLA==
+
+babel-plugin-syntax-jsx@^6.18.0:
+  version "6.18.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  integrity sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY=
 
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
@@ -2755,7 +3238,25 @@ bser@2.1.1:
   dependencies:
     node-int64 "^0.4.0"
 
-buffer-from@^1.0.0:
+buffer-alloc-unsafe@^1.1.0:
+  version "1.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/buffer-alloc-unsafe/-/buffer-alloc-unsafe-1.1.0.tgz#bd7dc26ae2972d0eda253be061dba992349c19f0"
+  integrity sha1-vX3CauKXLQ7aJTvgYdupkjScGfA=
+
+buffer-alloc@^1.2.0:
+  version "1.2.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/buffer-alloc/-/buffer-alloc-1.2.0.tgz#890dd90d923a873e08e10e5fd51a57e5b7cce0ec"
+  integrity sha1-iQ3ZDZI6hz4I4Q5f1RpX5bfM4Ow=
+  dependencies:
+    buffer-alloc-unsafe "^1.1.0"
+    buffer-fill "^1.0.0"
+
+buffer-fill@^1.0.0:
+  version "1.0.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/buffer-fill/-/buffer-fill-1.0.0.tgz#f8f78b76789888ef39f205cd637f68e702122b2c"
+  integrity sha1-+PeLdniYiO858gXNY39o5wISKyw=
+
+buffer-from@^1.0.0, buffer-from@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/buffer-from/-/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
   integrity sha512-MQcXEUbCKtEo7bhqEs6560Hyd4XaovZlO/k9V3hjVUF/zwW7KBVdSK4gIt/bzwS9MbR5qob+F5jusZsb0YQK2A==
@@ -2787,6 +3288,14 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
+
+buffer@^5.4.3:
+  version "5.5.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/buffer/-/buffer-5.5.0.tgz#9c3caa3d623c33dd1c7ef584b89b88bf9c9bc1ce"
+  integrity sha1-nDyqPWI8M90cfvWEuJuIv5ybwc4=
+  dependencies:
+    base64-js "^1.0.2"
+    ieee754 "^1.1.4"
 
 builtin-status-codes@^3.0.0:
   version "3.0.0"
@@ -3303,7 +3812,7 @@ content-type@~1.0.4:
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
-convert-source-map@1.7.0, convert-source-map@^1.4.0, convert-source-map@^1.7.0:
+convert-source-map@1.7.0, convert-source-map@^1.4.0, convert-source-map@^1.5.0, convert-source-map@^1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.7.0.tgz#17a2cb882d7f77d3490585e2ce6c524424a3a442"
   integrity sha512-4FJkXzKXEDB1snCFZlLP4gpC3JILicCpGbzG9f9G7tGqGCzETQ2hWPrcinA9oU4wtf2biUaEH5065UnMeR33oA==
@@ -3399,6 +3908,16 @@ create-ecdh@^4.0.0:
     bn.js "^4.1.0"
     elliptic "^6.0.0"
 
+create-emotion@^10.0.27:
+  version "10.0.27"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/create-emotion/-/create-emotion-10.0.27.tgz#cb4fa2db750f6ca6f9a001a33fbf1f6c46789503"
+  integrity sha1-y0+i23UPbKb5oAGjP78fbEZ4lQM=
+  dependencies:
+    "@emotion/cache" "^10.0.27"
+    "@emotion/serialize" "^0.11.15"
+    "@emotion/sheet" "0.9.4"
+    "@emotion/utils" "0.11.3"
+
 create-hash@^1.1.0, create-hash@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/create-hash/-/create-hash-1.2.0.tgz#889078af11a63756bcfb59bd221996be3a9ef196"
@@ -3459,7 +3978,7 @@ crypto-browserify@^3.11.0:
     randombytes "^2.0.0"
     randomfill "^1.0.3"
 
-crypto-js@^3.3.0:
+crypto-js@^3.1.9-1, crypto-js@^3.3.0:
   version "3.3.0"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
   integrity sha1-hG3RzOL2iqz6FWyFePkmpgm3l2s=
@@ -3682,7 +4201,7 @@ cssstyle@^1.0.0, cssstyle@^1.1.1:
   dependencies:
     cssom "0.3.x"
 
-csstype@^2.2.0:
+csstype@^2.2.0, csstype@^2.5.7:
   version "2.6.9"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/csstype/-/csstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
   integrity sha1-BRQdDNVXpWuIkTlMGRHEDIqY0Jg=
@@ -3899,6 +4418,11 @@ diffie-hellman@^5.0.0:
     bn.js "^4.1.0"
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
+
+dijkstrajs@^1.0.1:
+  version "1.0.1"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/dijkstrajs/-/dijkstrajs-1.0.1.tgz#d3cd81221e3ea40742cfcde556d4e99e98ddc71b"
+  integrity sha1-082BIh4+pAdCz83lVtTpnpjdxxs=
 
 dir-glob@2.0.0:
   version "2.0.0"
@@ -4117,6 +4641,14 @@ emojis-list@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/emojis-list/-/emojis-list-3.0.0.tgz#5570662046ad29e2e916e71aae260abdff4f6a78"
   integrity sha512-/kyM18EfinwXZbno9FyUGeFh87KC8HRQBQGildHZbEuRyWFOmv1U10o9BBp8XVZDVNNuQKyIGIu5ZYAAXJ0V2Q==
+
+emotion@^10.0.9:
+  version "10.0.27"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/emotion/-/emotion-10.0.27.tgz#f9ca5df98630980a23c819a56262560562e5d75e"
+  integrity sha1-+cpd+YYwmAojyBmlYmJWBWLl114=
+  dependencies:
+    babel-plugin-emotion "^10.0.27"
+    create-emotion "^10.0.27"
 
 encodeurl@~1.0.2:
   version "1.0.2"
@@ -4787,6 +5319,11 @@ find-cache-dir@^3.2.0:
     commondir "^1.0.1"
     make-dir "^3.0.2"
     pkg-dir "^4.1.0"
+
+find-root@^1.1.0:
+  version "1.1.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
+  integrity sha1-q8/Iunb3CMQql7PWhbfpRQv7nOQ=
 
 find-up@4.1.0, find-up@^4.0.0, find-up@^4.1.0:
   version "4.1.0"
@@ -5986,6 +6523,11 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+isarray@^2.0.1:
+  version "2.0.5"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
+  integrity sha1-ivHkwSISRMxiRZ+vOJQNTmRKVyM=
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -7993,6 +8535,11 @@ pn@^1.1.0:
   resolved "https://registry.yarnpkg.com/pn/-/pn-1.1.0.tgz#e2f4cef0e219f463c179ab37463e4e1ecdccbafb"
   integrity sha512-2qHaIQr2VLRFoxe2nASzsV6ef4yOOH+Fi9FBOVH6cqeSgUnoyySPZkxzLuzd+RYOQTRpROA0ztTMqxROKSb/nA==
 
+pngjs@^3.3.0:
+  version "3.4.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/pngjs/-/pngjs-3.4.0.tgz#99ca7d725965fb655814eaf65f38f12bbdbf555f"
+  integrity sha1-mcp9clll+2VYFOr2XzjxK72/VV8=
+
 pnp-webpack-plugin@1.6.4:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/pnp-webpack-plugin/-/pnp-webpack-plugin-1.6.4.tgz#c9711ac4dc48a685dabafc86f8b6dd9f8df84149"
@@ -8826,7 +9373,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -8909,6 +9456,32 @@ q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qr.js@0.0.0:
+  version "0.0.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/qr.js/-/qr.js-0.0.0.tgz#cace86386f59a0db8050fa90d9b6b0e88a1e364f"
+  integrity sha1-ys6GOG9ZoNuAUPqQ2baw6IoeNk8=
+
+qrcode.react@^0.8.0:
+  version "0.8.0"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/qrcode.react/-/qrcode.react-0.8.0.tgz#413b31cc3b62910e39513f7bead945e01c4c34fb"
+  integrity sha1-QTsxzDtikQ45UT976tlF4BxMNPs=
+  dependencies:
+    prop-types "^15.6.0"
+    qr.js "0.0.0"
+
+qrcode@^1.4.4:
+  version "1.4.4"
+  resolved "https://cngholdings.jfrog.io/cngholdings/api/npm/npm-virtual/qrcode/-/qrcode-1.4.4.tgz#f0c43568a7e7510a55efc3b88d9602f71963ea83"
+  integrity sha1-8MQ1aKfnUQpV78O4jZYC9xlj6oM=
+  dependencies:
+    buffer "^5.4.3"
+    buffer-alloc "^1.2.0"
+    buffer-from "^1.1.1"
+    dijkstrajs "^1.0.1"
+    isarray "^2.0.1"
+    pngjs "^3.3.0"
+    yargs "^13.2.4"
 
 qs@6.7.0:
   version "6.7.0"
@@ -9232,7 +9805,7 @@ regenerate@^1.4.0:
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
   integrity sha512-1G6jJVDWrt0rK99kBjvEtziZNCICAuvIPkSiUFIQxVP06RCVpq3dmDo2oi6ABpYaDYaTRr67BEhL8r1wgEZZKg==
 
-regenerator-runtime@^0.11.0:
+regenerator-runtime@^0.11.0, regenerator-runtime@^0.11.1:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==
@@ -9952,7 +10525,7 @@ source-map@0.6.1, source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, sourc
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
-source-map@^0.5.0, source-map@^0.5.6:
+source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -11389,7 +11962,7 @@ yargs@12.0.5:
     y18n "^3.2.1 || ^4.0.0"
     yargs-parser "^11.1.1"
 
-yargs@^13.3.0:
+yargs@^13.2.4, yargs@^13.3.0:
   version "13.3.2"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-13.3.2.tgz#ad7ffefec1aa59565ac915f82dccb38a9c31a2dd"
   integrity sha512-AX3Zw5iPruN5ie6xGRIDgqkT+ZhnRlZMLMHAs8tg7nRruy2Nb+i5o9bwghAogtM08q1dpr2LVoS8KSTMYpWXUw==

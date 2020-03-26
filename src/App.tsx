@@ -1,6 +1,10 @@
 import React from "react";
-import CompanyRow from "./components/Company/Row";
+import Table from "./components/Company/Table";
+import Amplify from "aws-amplify";
+import awsmobile from "./aws-exports";
 
+
+Amplify.configure(awsmobile);
 function App() {
   return (
     <div className="App">
@@ -8,11 +12,8 @@ function App() {
       <h2 className="text-xl text-gray-800 text-center">
         Holding companies accountable for their response to the COVID19 pandemic
       </h2>
-      <div className="container mx-auto">
-        <section className="mt-20">
-          <h3 className="text-xl text-gray-800 text-center">Companies</h3>
-          <CompanyRow name="Amazon" />
-        </section>
+      <div className="container px-10 mx-auto">
+        <Table/>
       </div>
     </div>
   );

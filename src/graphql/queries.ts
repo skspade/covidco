@@ -7,10 +7,7 @@ export const getCompany = /* GraphQL */ `
       id
       name
       description
-      rating {
-        UP
-        DOWN
-      }
+      rating
       logoUrl
       referencesUrl
     }
@@ -27,10 +24,7 @@ export const listCompanys = /* GraphQL */ `
         id
         name
         description
-        rating {
-          UP
-          DOWN
-        }
+        rating
         logoUrl
         referencesUrl
       }

@@ -12,17 +12,8 @@ type Company
   id: ID!
   name: String!
   description: String!
-  rating: Rating!
+  rating: Int!
   logoUrl: String!
   referencesUrl: [String]!
 }
 
-
-type Rating {
- count:Int
-}
-
-enum RatingEnum {
-  UP
-  DOWN
-}

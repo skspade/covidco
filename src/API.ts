@@ -5,19 +5,15 @@ export type CreateCompanyInput = {
   id?: string | null,
   name: string,
   description: string,
-  rating: RatingInput,
+  rating: number,
   logoUrl: string,
   referencesUrl: Array< string | null >,
-};
-
-export type RatingInput = {
-  UP: number,
-  DOWN: number,
 };
 
 export type ModelCompanyConditionInput = {
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
+  rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
   referencesUrl?: ModelStringInput | null,
   and?: Array< ModelCompanyConditionInput | null > | null,
@@ -65,11 +61,23 @@ export type ModelSizeInput = {
   between?: Array< number | null > | null,
 };
 
+export type ModelIntInput = {
+  ne?: number | null,
+  eq?: number | null,
+  le?: number | null,
+  lt?: number | null,
+  ge?: number | null,
+  gt?: number | null,
+  between?: Array< number | null > | null,
+  attributeExists?: boolean | null,
+  attributeType?: ModelAttributeTypes | null,
+};
+
 export type UpdateCompanyInput = {
   id: string,
   name?: string | null,
   description?: string | null,
-  rating?: RatingInput | null,
+  rating?: number | null,
   logoUrl?: string | null,
   referencesUrl?: Array< string | null > | null,
 };
@@ -82,6 +90,7 @@ export type ModelCompanyFilterInput = {
   id?: ModelIDInput | null,
   name?: ModelStringInput | null,
   description?: ModelStringInput | null,
+  rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
   referencesUrl?: ModelStringInput | null,
   and?: Array< ModelCompanyFilterInput | null > | null,
@@ -116,11 +125,7 @@ export type CreateCompanyMutation = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -137,11 +142,7 @@ export type UpdateCompanyMutation = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -158,11 +159,7 @@ export type DeleteCompanyMutation = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -178,11 +175,7 @@ export type GetCompanyQuery = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -202,11 +195,7 @@ export type ListCompanysQuery = {
       id: string,
       name: string,
       description: string,
-      rating:  {
-        __typename: "Rating",
-        UP: number,
-        DOWN: number,
-      },
+      rating: number,
       logoUrl: string,
       referencesUrl: Array< string | null >,
     } | null > | null,
@@ -224,11 +213,7 @@ export type OnCreateCompanySubscription = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -244,11 +229,7 @@ export type OnUpdateCompanySubscription = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
@@ -264,11 +245,7 @@ export type OnDeleteCompanySubscription = {
     id: string,
     name: string,
     description: string,
-    rating:  {
-      __typename: "Rating",
-      UP: number,
-      DOWN: number,
-    },
+    rating: number,
     logoUrl: string,
     referencesUrl: Array< string | null >,
   } | null,
