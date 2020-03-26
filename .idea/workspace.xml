@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="feat: Init amplify">
+      <change afterPath="$PROJECT_DIR$/amplify/.config/project-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -96,29 +98,50 @@
       <option name="presentableId" value="Default" />
       <updated>1584969370108</updated>
       <workItem from="1584969371922" duration="353000" />
-      <workItem from="1585232262342" duration="640000" />
+      <workItem from="1585232262342" duration="1781000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: Init tailwind">
+      <created>1585232939587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585232939587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Init tailwind" />
+    <MESSAGE value="feat: Init amplify" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Init amplify" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1659" height="294" key="GridCell.Tab.0.bottom" timestamp="1585232849976">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585239207525">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="294" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585232849976" />
-    <state width="1659" height="294" key="GridCell.Tab.0.center" timestamp="1585232849975">
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585239207525" />
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585233009678">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="294" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585232849975" />
-    <state width="1659" height="294" key="GridCell.Tab.0.left" timestamp="1585232849974">
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585233009678" />
+    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585233009677">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="294" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585232849974" />
-    <state width="1659" height="294" key="GridCell.Tab.0.right" timestamp="1585232849976">
+    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585233009677" />
+    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585233009676">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="294" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585232849976" />
+    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585233009676" />
+    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585233009677">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585233009677" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1585239215736">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585239215736" />
   </component>
 </project>
