@@ -1,0 +1,28 @@
+type Company
+@model
+@auth(
+  rules: [
+    {
+      allow: owner
+      ownerField: "owner"
+      operations: [create, update, delete]
+    }
+  ]
+) {
+  id: ID!
+  name: String!
+  description: String!
+  rating: Rating!
+  logoUrl: String!
+  referencesUrl: [String]!
+}
+
+
+type Rating {
+ count:Int
+}
+
+enum RatingEnum {
+  UP
+  DOWN
+}

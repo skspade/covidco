@@ -10,6 +10,11 @@
             "StackName": "amplify-covidco-prod-103102",
             "StackId": "arn:aws:cloudformation:us-east-1:317721045476:stack/amplify-covidco-prod-103102/6cb1f8b0-6f6e-11ea-8927-0a36a8f29061",
             "AmplifyAppId": "d2qmxvklsxo8gy"
+        },
+        "categories": {
+            "auth": {
+                "covidcoffe3abac": {}
+            }
         }
     }
 }
