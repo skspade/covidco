@@ -2,6 +2,7 @@ import React from "react";
 import Amplify from "aws-amplify";
 import awsmobile from "./aws-exports";
 import CompanyForm from "./components/Admin/CompanyForm";
+import CompanyContainer from "./components/Company/Container";
 
 
 Amplify.configure(awsmobile);
@@ -14,7 +15,7 @@ function App() {
       </h2>
       <div className="container px-10 mx-auto">
         <CompanyForm/>
-        {/*<CompanyContainer/>*/}
+        <CompanyContainer/>
       </div>
     </div>
   );

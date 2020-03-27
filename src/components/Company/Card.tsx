@@ -1,11 +1,24 @@
 import React from "react";
 
 interface Props {
-  name: string;
+  company: {
+    __typename: "Company";
+    id: string;
+    name: string;
+    description: string;
+    rating: number;
+    logoUrl: string;
+    references: Array<{
+      __typename: "Reference";
+      heading: string;
+      url: string;
+    }>;
+  };
   // imgUrl?:string
 }
 
-const Card = ({ name }: Props) => {
+const Card = ({ company }: Props) => {
+  const { name, description } = company;
   return (
     <div>
       <div className="flex flex-col justify-center items-center rounded w-56 p-2 hover:shadow-md zoom">
@@ -17,10 +30,7 @@ const Card = ({ name }: Props) => {
         <div className=" mt-1 text-gray-900 flex justify-center font-bold w-20">
           {name}
         </div>
-        <div className="flex items-center ml-4">
-          Amazon has been forcing everyone into working long hours to meet
-          demand
-        </div>
+        <div className="flex items-center ml-4">{description}</div>
       </div>
     </div>
   );

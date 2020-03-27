@@ -9,10 +9,9 @@ interface Props {
 const CardDeck = ({ data }: Props) => {
   return (
     <div className="flex">
-      <Card name="Amazon" />
       {data.listCompanys?.items?.map(company => {
         if (company) {
-          return <Card name={company.name} />;
+          return <Card company={company} />;
         }
       })}
     </div>

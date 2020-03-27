@@ -1,11 +1,22 @@
 import React from "react";
 
 interface Props {
-  name: string;
-  // imgUrl?:string
+  company: {
+    __typename: "Company";
+    id: string;
+    name: string;
+    description: string;
+    rating: number;
+    logoUrl: string;
+    references: Array<{
+      __typename: "Reference";
+      heading: string;
+      url: string;
+    }>;
+  };
 }
-const CompanyRow = ({ name }: Props) => {
-  //TODO Add a search bar
+const CompanyRow = ({ company }: Props) => {
+  const { name, description } = company;
   return (
     <div className="rounded w-full flex mb-1 hover:shadow-md zoom">
       <div className="flex p-2">
@@ -14,14 +25,14 @@ const CompanyRow = ({ name }: Props) => {
           src="https://via.placeholder.com/150"
           alt=""
         />
-        <div className="text-gray-900 flex items-center font-bold ml-5 w-20">{name}</div>
-        <div className="flex items-center ml-4">
-          Amazon has been forcing everyone into working long hours to meet
-          demand
+        <div className="text-gray-900 flex items-center font-bold ml-5 w-20">
+          {name}
         </div>
+        <div className="flex items-center ml-4">{description}</div>
       </div>
     </div>
   );
 };
 
 export default CompanyRow;
+//TODO combine Row and Card
