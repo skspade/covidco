@@ -18,6 +18,7 @@
     "autoprefixer": "^9.7.5",
     "aws-amplify": "^2.2.7",
     "aws-amplify-react": "^3.1.8",
+    "formik": "^2.1.4",
     "lodash": "^4.17.15",
     "postcss-cli": "^7.1.0",
     "react": "^16.13.1",

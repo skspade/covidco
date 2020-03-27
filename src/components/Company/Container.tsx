@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import Table from "./Table";
 import CardDeck from "./CardDeck";
-import {useQuery} from "../../graphql/hooks/useQuery";
-import {ListCompanysQuery} from "../../API";
-import {listCompanys} from "../../graphql/queries";
+import { useQuery } from "../../graphql/hooks/useQuery";
+import { ListCompanysQuery } from "../../API";
+import { listCompanys } from "../../graphql/queries";
 
 const Container = () => {
   const { data, error, loading } = useQuery<ListCompanysQuery>(listCompanys);
@@ -11,7 +11,7 @@ const Container = () => {
   return (
     <div>
       <Table data={data} />
-    <CardDeck/>
+      <CardDeck data={data} />
     </div>
   );
 };

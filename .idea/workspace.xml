@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Company/Card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Company/CardDeck.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Company/Container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Form/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company/Row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Row.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +111,7 @@
       <updated>1584969370108</updated>
       <workItem from="1584969371922" duration="353000" />
       <workItem from="1585232262342" duration="8246000" />
-      <workItem from="1585250353063" duration="8166000" />
+      <workItem from="1585250353063" duration="11525000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init tailwind">
       <created>1585232939587</created>
@@ -154,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585294312437</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: Implements card component">
+      <created>1585296509559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585296509559</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,30 +168,31 @@
     <MESSAGE value="feat: Basic scaffolding" />
     <MESSAGE value="feat: Adds auth" />
     <MESSAGE value="feat: Updates schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Updates schema" />
+    <MESSAGE value="feat: Implements card component" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Implements card component" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585294312031">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585296509158">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585294312031" />
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585296509158" />
     <state x="434" y="95" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585239686388" />
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585250520923">
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585298132567">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585250520923" />
-    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585250520921">
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585298132567" />
+    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585298132564">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585250520921" />
-    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585250520920">
+    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585298132564" />
+    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585298132563">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585250520920" />
-    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585250520922">
+    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585298132563" />
+    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585298132565">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585250520922" />
+    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585298132565" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1585241033388">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -207,9 +209,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="506" y="282" width="667" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585253823840" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585296444417">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585298982357">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585296444417" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585298982357" />
   </component>
 </project>
