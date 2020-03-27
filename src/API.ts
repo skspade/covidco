@@ -7,7 +7,12 @@ export type CreateCompanyInput = {
   description: string,
   rating: number,
   logoUrl: string,
-  referencesUrl: Array< string | null >,
+  instances: Array< ReferenceInput >,
+};
+
+export type ReferenceInput = {
+  heading: string,
+  url: string,
 };
 
 export type ModelCompanyConditionInput = {
@@ -15,7 +20,6 @@ export type ModelCompanyConditionInput = {
   description?: ModelStringInput | null,
   rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
-  referencesUrl?: ModelStringInput | null,
   and?: Array< ModelCompanyConditionInput | null > | null,
   or?: Array< ModelCompanyConditionInput | null > | null,
   not?: ModelCompanyConditionInput | null,
@@ -79,7 +83,7 @@ export type UpdateCompanyInput = {
   description?: string | null,
   rating?: number | null,
   logoUrl?: string | null,
-  referencesUrl?: Array< string | null > | null,
+  instances?: Array< ReferenceInput > | null,
 };
 
 export type DeleteCompanyInput = {
@@ -92,7 +96,6 @@ export type ModelCompanyFilterInput = {
   description?: ModelStringInput | null,
   rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
-  referencesUrl?: ModelStringInput | null,
   and?: Array< ModelCompanyFilterInput | null > | null,
   or?: Array< ModelCompanyFilterInput | null > | null,
   not?: ModelCompanyFilterInput | null,
@@ -127,7 +130,11 @@ export type CreateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -144,7 +151,11 @@ export type UpdateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -161,7 +172,11 @@ export type DeleteCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -177,7 +192,11 @@ export type GetCompanyQuery = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -197,7 +216,11 @@ export type ListCompanysQuery = {
       description: string,
       rating: number,
       logoUrl: string,
-      referencesUrl: Array< string | null >,
+      instances:  Array< {
+        __typename: "Reference",
+        heading: string,
+        url: string,
+      } >,
     } | null > | null,
     nextToken: string | null,
   } | null,
@@ -215,7 +238,11 @@ export type OnCreateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -231,7 +258,11 @@ export type OnUpdateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };
 
@@ -247,6 +278,10 @@ export type OnDeleteCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    referencesUrl: Array< string | null >,
+    instances:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   } | null,
 };

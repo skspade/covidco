@@ -9,7 +9,10 @@ export const getCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      referencesUrl
+      instances {
+        heading
+        url
+      }
     }
   }
 `;
@@ -26,7 +29,10 @@ export const listCompanys = /* GraphQL */ `
         description
         rating
         logoUrl
-        referencesUrl
+        instances {
+          heading
+          url
+        }
       }
       nextToken
     }

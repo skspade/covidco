@@ -1,19 +1,25 @@
 type Company
-@model
-@auth(
-  rules: [
-    {
-      allow: owner
-      ownerField: "owner"
-      operations: [create, update, delete]
-    }
-  ]
-) {
+  @model
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        operations: [create, update, delete]
+      }
+    ]
+  ) {
   id: ID!
   name: String!
   description: String!
   rating: Int!
   logoUrl: String!
-  referencesUrl: [String]!
+  references: [Reference!]!
+}
+
+# The url will link to an article and the heading will be that articles headline
+type Reference {
+  heading: String!
+  url: String!
 }
 

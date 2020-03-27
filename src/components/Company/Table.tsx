@@ -6,7 +6,7 @@ import { ListCompanysQuery } from "../../API";
 
 const Table = () => {
   const { data, error, loading } = useQuery<ListCompanysQuery>(listCompanys);
-  console.log({ loading });
+  if (loading) return <div>Loading...</div>;
   return (
     <section className="mt-20 flex flex-col">
       <h3 className="text-xl text-gray-800 text-center">Companies</h3>
