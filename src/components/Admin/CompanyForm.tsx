@@ -1,8 +1,9 @@
-import React, { ReactEventHandler } from "react";
-import { useMutation } from "../../graphql/hooks/useMutation";
-import { createCompany } from "../../graphql/mutations";
-import { Field, Formik, Form, FieldArray } from "formik";
+import React from "react";
+import {useMutation} from "../../graphql/hooks/useMutation";
+import {createCompany} from "../../graphql/mutations";
+import {FieldArray, Form, Formik} from "formik";
 import Input from "../Form/Input";
+import Button from "../Form/Button";
 
 const defaultValues = {
   name: "",
@@ -28,9 +29,9 @@ const CompanyForm = () => {
                   <>
                     <Input name={`references[${index}].name`} />
                     <Input name={`references[${index}].url`} />
-                    <button onClick={() => arrayHelpers.insert(index, "")}>
+                    <Button color='green' onClick={() => arrayHelpers.insert(index, "")}>
                       Add
-                    </button>
+                    </Button>
                   </>
                 ))
               }

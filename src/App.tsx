@@ -1,7 +1,6 @@
 import React from "react";
 import Amplify from "aws-amplify";
 import awsmobile from "./aws-exports";
-import  CompanyContainer from "./components/Company/Container";
 import CompanyForm from "./components/Admin/CompanyForm";
 
 
