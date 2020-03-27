@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "./components/Company/Table";
 import Amplify from "aws-amplify";
 import awsmobile from "./aws-exports";
+import  CompanyContainer from "./components/Company/Container";
 
 
 Amplify.configure(awsmobile);
@@ -13,7 +13,7 @@ function App() {
         Holding companies accountable for their response to the COVID19 pandemic
       </h2>
       <div className="container px-10 mx-auto">
-        <Table/>
+        <CompanyContainer/>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ export type CreateCompanyInput = {
   description: string,
   rating: number,
   logoUrl: string,
-  instances: Array< ReferenceInput >,
+  references: Array< ReferenceInput >,
 };
 
 export type ReferenceInput = {
@@ -83,7 +83,7 @@ export type UpdateCompanyInput = {
   description?: string | null,
   rating?: number | null,
   logoUrl?: string | null,
-  instances?: Array< ReferenceInput > | null,
+  references?: Array< ReferenceInput > | null,
 };
 
 export type DeleteCompanyInput = {
@@ -130,7 +130,7 @@ export type CreateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -151,7 +151,7 @@ export type UpdateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -172,7 +172,7 @@ export type DeleteCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -192,7 +192,7 @@ export type GetCompanyQuery = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -216,7 +216,7 @@ export type ListCompanysQuery = {
       description: string,
       rating: number,
       logoUrl: string,
-      instances:  Array< {
+      references:  Array< {
         __typename: "Reference",
         heading: string,
         url: string,
@@ -238,7 +238,7 @@ export type OnCreateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -258,7 +258,7 @@ export type OnUpdateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,
@@ -278,7 +278,7 @@ export type OnDeleteCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    instances:  Array< {
+    references:  Array< {
       __typename: "Reference",
       heading: string,
       url: string,

@@ -4,17 +4,19 @@ interface Props {
   name: string;
   // imgUrl?:string
 }
-const CompanyRow = ({ name }: Props) => {
-  //TODO Add a search bar
+
+const Card = ({ name }: Props) => {
   return (
-    <div className="rounded w-full flex mb-1 hover:shadow-md zoom">
-      <div className="flex p-2">
+    <div>
+      <div className="flex flex-col justify-center items-center rounded w-56 p-2 hover:shadow-md zoom">
         <img
-          className="w-20 h-12 border-2 rounded"
+          className="w-full h-20 border-2 rounded"
           src="https://via.placeholder.com/150"
           alt=""
         />
-        <div className="text-gray-900 flex items-center font-bold ml-5 w-20">{name}</div>
+        <div className=" mt-1 text-gray-900 flex justify-center font-bold w-20">
+          {name}
+        </div>
         <div className="flex items-center ml-4">
           Amazon has been forcing everyone into working long hours to meet
           demand
@@ -24,4 +26,4 @@ const CompanyRow = ({ name }: Props) => {
   );
 };
 
-export default CompanyRow;
+export default Card;

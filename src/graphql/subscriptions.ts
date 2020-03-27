@@ -9,7 +9,7 @@ export const onCreateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }
@@ -24,7 +24,7 @@ export const onUpdateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }
@@ -39,7 +39,7 @@ export const onDeleteCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }

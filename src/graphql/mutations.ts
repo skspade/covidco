@@ -12,7 +12,7 @@ export const createCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }
@@ -30,7 +30,7 @@ export const updateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }
@@ -48,7 +48,7 @@ export const deleteCompany = /* GraphQL */ `
       description
       rating
       logoUrl
-      instances {
+      references {
         heading
         url
       }
