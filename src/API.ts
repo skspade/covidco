@@ -220,7 +220,7 @@ export type ListCompanysQuery = {
         __typename: "Reference",
         heading: string,
         url: string,
-      } >,
+    } >,
     } | null > | null,
     nextToken: string | null,
   } | null,

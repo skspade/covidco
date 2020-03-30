@@ -7,8 +7,7 @@ interface Props {
 }
 const Table = ({ data }: Props) => {
   return (
-    <section className="mt-20 flex flex-col">
-      <h3 className="text-xl text-gray-800 text-center">Companies</h3>
+    <section className="flex flex-col">
       {data.listCompanys?.items?.map(company => {
         if (company) {
           return <CompanyRow company={company} />;
