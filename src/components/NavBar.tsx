@@ -11,9 +11,6 @@ const NavBar = () => {
         <li className='mx-2'>
           <Link to="/company-form">Company Form</Link>
         </li>
-        <li className='mx-2'>
-          <Link to="/users">Users</Link>
-        </li>
       </ul>
     </nav>
   );
