@@ -1,30 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { useMutation } from "../../graphql/hooks/useMutation";
 import { createCompany } from "../../graphql/mutations";
 import { FieldArray, Form, Formik, FormikValues } from "formik";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
+import awsmobile from "../../aws-exports";
+import { Storage, API, graphqlOperation } from "aws-amplify";
+import { v4 as uuid } from 'uuid';
+
+const {
+  aws_user_files_s3_bucket_region: region,
+  aws_user_files_s3_bucket: bucket
+} = awsmobile;
 
 const defaultValues = {
   name: "",
   description: "",
-  references: [{ heading: "", url: "" }]
+  references: [{ heading: "", url: "" }],
+  file: null
 };
 
 const CompanyForm = () => {
   const [{ data, loading, error }, addCompany] = useMutation(createCompany, {});
 
   async function handleSubmit(values: FormikValues) {
-    try {
-      await addCompany({ input: { ...values, rating: 0, logoUrl:'t' } });
-    } catch (e) {
-      console.error(e);
+    const { file, ...rest } = values;
+    if (file) {
+      const extension = file.name.split(".")[1];
+      const { type: mimeType } = file;
+      const key = `images/${uuid()}.${extension}`;
+      const url = `https://${bucket}.s3.${region}.amazonaws.com/public/${key}`;
+      try {
+        await Storage.put(key, file, {
+          contentType: mimeType
+        });
+        await addCompany({ input: { ...rest, rating: 0, logoUrl: url } });
+      } catch (e) {
+        console.error(e);
+      }
     }
   }
 
   return (
     <Formik initialValues={defaultValues} onSubmit={handleSubmit}>
-      {({ values }) => (
+      {({ values, setFieldValue }) => (
         <div className="flex justify-center">
           {loading && <div>Applying changes</div>}
           <Form className="flex flex-col justify-between items-center max-w-xs">
@@ -35,8 +54,11 @@ const CompanyForm = () => {
                 {arrayHelpers =>
                   values.references.map((reference, index) => (
                     <>
-                      <Input name={`references[${index}].heading`} />
-                      <Input name={`references[${index}].url`} />
+                      <Input
+                        key={index}
+                        name={`references[${index}].heading`}
+                      />
+                      <Input key={index} name={`references[${index}].url`} />
                       <Button
                         color="green"
                         onClick={() => arrayHelpers.insert(index, "")}
@@ -48,6 +70,14 @@ const CompanyForm = () => {
                   ))
                 }
               </FieldArray>
+              <input
+                name="file"
+                type="file"
+                onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                  event.persist();
+                  setFieldValue("file", event.currentTarget.files?.[0]);
+                }}
+              />
             </>
             <Button color={"green"} type="submit" className="mt-5">
               Create
