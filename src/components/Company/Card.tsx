@@ -18,13 +18,13 @@ interface Props {
 }
 
 const Card = ({ company }: Props) => {
-  const { name, description } = company;
+  const { name, description, logoUrl } = company;
   return (
     <div>
       <div className="flex flex-col justify-center items-center rounded w-56 p-2 hover:shadow-md zoom">
         <img
           className="w-full h-20 border-2 rounded"
-          src="https://via.placeholder.com/150"
+          src={logoUrl}
           alt=""
         />
         <div className=" mt-1 text-gray-900 flex justify-center font-bold w-20">

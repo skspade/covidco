@@ -16,13 +16,13 @@ interface Props {
   };
 }
 const CompanyRow = ({ company }: Props) => {
-  const { name, description } = company;
+  const { name, description, logoUrl } = company;
   return (
     <div className="rounded w-full flex mb-1 hover:shadow-md zoom">
       <div className="flex p-2">
         <img
           className="w-20 h-12 border-2 rounded"
-          src="https://via.placeholder.com/150"
+          src={logoUrl}
           alt=""
         />
         <div className="text-gray-900 flex items-center font-bold ml-5 w-20">

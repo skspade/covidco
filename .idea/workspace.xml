@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/S3Trigger13027ecd-cloudformation-template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/event.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/s3-cloudformation-template.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/s3-cloudformation-template.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Row.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +113,7 @@
       <workItem from="1585581593376" duration="1579000" />
       <workItem from="1585600357690" duration="1768000" />
       <workItem from="1585665930719" duration="648000" />
-      <workItem from="1585679153750" duration="3211000" />
+      <workItem from="1585679153750" duration="3362000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init tailwind">
       <created>1585232939587</created>
@@ -208,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585602182942</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: Adds support for image uploading">
+      <created>1585686303579</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1585686303579</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,17 +225,18 @@
     <MESSAGE value="feat: Implements mutation for create" />
     <MESSAGE value="feat: New features; Navbar, toggle and two different views" />
     <MESSAGE value="feat: Hooks toggle component up to routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Hooks toggle component up to routes" />
+    <MESSAGE value="feat: Adds support for image uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Adds support for image uploading" />
   </component>
   <component name="WindowStateProjectService">
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1585361251645">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585361251645" />
-    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585602182516">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585686303058">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585602182516" />
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585686303058" />
     <state x="434" y="95" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585239686388" />
     <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585685957457">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -259,10 +258,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1585241033388" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1585602186445">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1585686306923">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585602186445" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585686306923" />
     <state x="451" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585600561282">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -275,9 +274,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="506" y="282" width="667" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585300119994" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585685897957">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585686403751">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585685897957" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585686403751" />
   </component>
 </project>
