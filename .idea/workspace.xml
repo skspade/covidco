@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="chore: Removes tailwind's generated css">
-      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="chore: Breaks company form into two components">
+      <change afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/CompanyForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/hooks/useMutation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/hooks/useMutation.ts" afterDir="false" />
+    </list>
+    <list id="3a8f3186-d774-4d33-99a6-2b23fb471a91" name="Do not touch" comment="">
+      <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +51,13 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Company" />
-      <recent name="$PROJECT_DIR$/src/graphql" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/modules/hooks" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Admin/CompanyForm" />
+      <recent name="$PROJECT_DIR$/src/components/Company" />
+      <recent name="$PROJECT_DIR$/src/graphql" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build:styles">
@@ -101,6 +107,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="" />
+      <changelist id="3a8f3186-d774-4d33-99a6-2b23fb471a91" name="Do not touch" comment="" />
       <created>1584969370108</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -114,7 +121,7 @@
       <workItem from="1585600357690" duration="1768000" />
       <workItem from="1585665930719" duration="648000" />
       <workItem from="1585679153750" duration="3739000" />
-      <workItem from="1585838674686" duration="1266000" />
+      <workItem from="1585838674686" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init tailwind">
       <created>1585232939587</created>
@@ -228,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585839853968</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="chore: Removes tailwind's generated css">
+      <created>1585839994023</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1585839994023</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,42 +265,47 @@
     <MESSAGE value="feat: Displays images" />
     <MESSAGE value="feat: Improves company form" />
     <MESSAGE value="chore: Removes tailwind's generated css" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: Removes tailwind's generated css" />
+    <MESSAGE value="chore: Breaks company form into two components" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: Breaks company form into two components" />
   </component>
   <component name="WindowStateProjectService">
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1585361251645">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585361251645" />
-    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585839925797">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585841314231">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585839925797" />
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585841314231" />
     <state x="434" y="95" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585239686388" />
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585839907845">
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585841266586">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585839907845" />
-    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585839907843">
+    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585841266586" />
+    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585841266585">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585839907843" />
-    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585839907842">
+    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585841266585" />
+    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585841266584">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585839907842" />
-    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585839907844">
+    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585841266584" />
+    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585841266585">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585839907844" />
+    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585841266585" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1585241033388">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1585241033388" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1585839782160">
+    <state x="659" y="446" key="VCS.ChangelistChooser" timestamp="1585839987086">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585839782160" />
+    <state x="659" y="446" key="VCS.ChangelistChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1585839987086" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1585839996636">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585839996636" />
     <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1585839921159">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -303,9 +322,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="506" y="282" width="667" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585300119994" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585839137489">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585840836021">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585839137489" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585840836021" />
   </component>
 </project>
