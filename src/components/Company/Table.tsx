@@ -1,16 +1,20 @@
 import React from "react";
 import CompanyRow from "./Row";
 import { ListCompanysQuery } from "../../API";
+import { useLocation } from "react-router-dom";
 
 interface Props {
   data: ListCompanysQuery;
 }
 const Table = ({ data }: Props) => {
+
+  const location = useLocation();
+  const type = location.pathname === '/table' ? 'row' : 'card';
   return (
-    <section className="flex flex-col">
+    <section className={`flex ${type === 'row' ? 'flex-col' : ''}`}>
       {data.listCompanys?.items?.map(company => {
         if (company) {
-          return <CompanyRow company={company} />;
+          return <CompanyRow type={type} company={company} />;
         }
       })}
     </section>
