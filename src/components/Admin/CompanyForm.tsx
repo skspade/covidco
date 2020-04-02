@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import { useMutation } from "../../graphql/hooks/useMutation";
-import { createCompany } from "../../graphql/mutations";
-import { FieldArray, Form, Formik, FormikValues } from "formik";
+import React from "react";
+import {useMutation} from "../../graphql/hooks/useMutation";
+import {createCompany} from "../../graphql/mutations";
+import {FieldArray, Form, Formik, FormikValues} from "formik";
 import Input from "../Form/Input";
 import Button from "../Form/Button";
 import awsmobile from "../../aws-exports";
-import { Storage, API, graphqlOperation } from "aws-amplify";
-import { v4 as uuid } from 'uuid';
+import {Storage} from "aws-amplify";
+import {v4 as uuid} from "uuid";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faMinus, faPlus} from "@fortawesome/free-solid-svg-icons";
 
 const {
   aws_user_files_s3_bucket_region: region,
@@ -49,27 +51,39 @@ const CompanyForm = () => {
           <Form className="flex flex-col justify-between items-center max-w-xs">
             <>
               <Input name="name" />
-              <Input name="description" type="textarea" />
-              <FieldArray name="references">
-                {arrayHelpers =>
-                  values.references.map((reference, index) => (
-                    <>
-                      <Input
-                        key={index}
-                        name={`references[${index}].heading`}
-                      />
-                      <Input key={index} name={`references[${index}].url`} />
-                      <Button
-                        color="green"
-                        onClick={() => arrayHelpers.insert(index, "")}
-                        className="mt-5"
-                      >
-                        Add
-                      </Button>
-                    </>
-                  ))
-                }
-              </FieldArray>
+              <Input name="description" as="textarea" />
+              <div className="my-1">
+                <h2 className='font-medium text-gray-800 text-center'>References</h2>
+                <FieldArray name="references">
+                  {arrayHelpers =>
+                    values.references.map((reference, index) => (
+                      <>
+                        <Input
+                          key={index}
+                          name={`references[${index}].heading`}
+                        />
+                        <Input key={index} name={`references[${index}].url`} />
+                        <div className="flex justify-between">
+                          <Button
+                            color="red"
+                            onClick={() => arrayHelpers.remove(index)}
+                            className="mt-5"
+                          >
+                            <FontAwesomeIcon icon={faMinus} />
+                          </Button>
+                          <Button
+                            color="green"
+                            onClick={() => arrayHelpers.insert(index, "")}
+                            className="mt-5"
+                          >
+                            <FontAwesomeIcon icon={faPlus} />
+                          </Button>
+                        </div>
+                      </>
+                    ))
+                  }
+                </FieldArray>
+              </div>
               <input
                 name="file"
                 type="file"
@@ -79,7 +93,7 @@ const CompanyForm = () => {
                 }}
               />
             </>
-            <Button color={"green"} type="submit" className="mt-5">
+            <Button color="blue" type="submit" className="mt-5">
               Create
             </Button>
           </Form>
