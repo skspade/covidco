@@ -6,6 +6,7 @@ import { v4 as uuid } from "uuid";
 import { Storage } from "aws-amplify";
 import awsmobile from "../../../aws-exports";
 import Form from "./Form";
+import {withAuthenticator} from "aws-amplify-react";
 
 const {
   aws_user_files_s3_bucket_region: region,
@@ -52,4 +53,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default withAuthenticator(Container);

@@ -20,7 +20,7 @@ function App() {
         <div className="container px-10 mx-auto">
           <Switch>
             <Route path="/company-form">
-              <CompanyForm />
+                <CompanyForm />
             </Route>
             <Route path="/">
               <CompanyContainer />
