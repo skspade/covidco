@@ -10,8 +10,11 @@ export const onCreateCompany = /* GraphQL */ `
       rating
       logoUrl
       references {
-        heading
-        url
+        items {
+          heading
+          url
+        }
+        nextToken
       }
     }
   }
@@ -25,8 +28,11 @@ export const onUpdateCompany = /* GraphQL */ `
       rating
       logoUrl
       references {
-        heading
-        url
+        items {
+          heading
+          url
+        }
+        nextToken
       }
     }
   }
@@ -40,8 +46,65 @@ export const onDeleteCompany = /* GraphQL */ `
       rating
       logoUrl
       references {
-        heading
-        url
+        items {
+          heading
+          url
+        }
+        nextToken
+      }
+    }
+  }
+`;
+export const onCreateReference = /* GraphQL */ `
+  subscription OnCreateReference($owner: String!) {
+    onCreateReference(owner: $owner) {
+      heading
+      url
+      company {
+        id
+        name
+        description
+        rating
+        logoUrl
+        references {
+          nextToken
+        }
+      }
+    }
+  }
+`;
+export const onUpdateReference = /* GraphQL */ `
+  subscription OnUpdateReference($owner: String!) {
+    onUpdateReference(owner: $owner) {
+      heading
+      url
+      company {
+        id
+        name
+        description
+        rating
+        logoUrl
+        references {
+          nextToken
+        }
+      }
+    }
+  }
+`;
+export const onDeleteReference = /* GraphQL */ `
+  subscription OnDeleteReference($owner: String!) {
+    onDeleteReference(owner: $owner) {
+      heading
+      url
+      company {
+        id
+        name
+        description
+        rating
+        logoUrl
+        references {
+          nextToken
+        }
       }
     }
   }

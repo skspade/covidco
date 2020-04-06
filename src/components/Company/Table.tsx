@@ -14,7 +14,7 @@ const Table = ({ data }: Props) => {
     <section className={`flex ${type === 'row' ? 'flex-col' : ''}`}>
       {data.listCompanys?.items?.map(company => {
         if (company) {
-          return <CompanyRow type={type} company={company} />;
+          return <CompanyRow key={company.id} type={type} company={company} />;
         }
       })}
     </section>

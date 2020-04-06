@@ -2,12 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="chore: Combines card and row components">
+      <change afterPath="$PROJECT_DIR$/amplify/backend/auth/covidco26cb2c8f/covidco26cb2c8f-cloudformation-template.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/auth/covidco26cb2c8f/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger9d92c4da/S3Trigger9d92c4da-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger9d92c4da/src/event.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger9d92c4da/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger9d92c4da/src/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/function/S3Trigger9d92c4da/src/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/storage/covidLogos/parameters.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/storage/covidLogos/s3-cloudformation-template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amplify/backend/storage/covidLogos/storage-params.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company/Card.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company/CardDeck.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/covidco/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/covidco/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/covidco/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/covidco/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/auth/covidcoffe3abac/covidcoffe3abac-cloudformation-template.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/auth/covidcoffe3abac/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/S3Trigger13027ecd-cloudformation-template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/event.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/function/S3Trigger13027ecd/src/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/s3-cloudformation-template.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/storage/covidcoCompanyLogos/storage-params.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Company/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company/Row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Row.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Company/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/hooks/useSubscription.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/hooks/useSubscription.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.ts" afterDir="false" />
     </list>
     <list id="3a8f3186-d774-4d33-99a6-2b23fb471a91" name="Do not touch" comment="">
       <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
@@ -124,6 +152,7 @@
       <workItem from="1585679153750" duration="3739000" />
       <workItem from="1585838674686" duration="3506000" />
       <workItem from="1585855262150" duration="725000" />
+      <workItem from="1585946525429" duration="5430000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init tailwind">
       <created>1585232939587</created>
@@ -291,27 +320,79 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585361251645" />
-    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1585855976764">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1586185576062">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585855976764" />
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1586185576062" />
     <state x="434" y="95" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585239686388" />
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom" timestamp="1585855976798">
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1586185187823">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585855976798" />
-    <state width="1659" height="169" key="GridCell.Tab.0.center" timestamp="1585855976797">
+    <state x="100" y="100" width="1480" height="850" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586185187823" />
+    <state width="1659" height="238" key="GridCell.Tab.0.bottom" timestamp="1586188286531">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585855976797" />
-    <state width="1659" height="169" key="GridCell.Tab.0.left" timestamp="1585855976796">
+    <state width="1659" height="238" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586188286531" />
+    <state width="1659" height="238" key="GridCell.Tab.0.center" timestamp="1586188286529">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585855976796" />
-    <state width="1659" height="169" key="GridCell.Tab.0.right" timestamp="1585855976798">
+    <state width="1659" height="238" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586188286529" />
+    <state width="1659" height="238" key="GridCell.Tab.0.left" timestamp="1586188286528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="169" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585855976798" />
+    <state width="1659" height="238" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586188286528" />
+    <state width="1659" height="238" key="GridCell.Tab.0.right" timestamp="1586188286530">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="238" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586188286530" />
+    <state width="1659" height="363" key="GridCell.Tab.1.bottom" timestamp="1586185362035">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362035" />
+    <state width="1659" height="363" key="GridCell.Tab.1.center" timestamp="1586185362034">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362034" />
+    <state width="1659" height="363" key="GridCell.Tab.1.left" timestamp="1586185362034">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362034" />
+    <state width="1659" height="363" key="GridCell.Tab.1.right" timestamp="1586185362035">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362035" />
+    <state width="1659" height="363" key="GridCell.Tab.2.bottom" timestamp="1586185362037">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362037" />
+    <state width="1659" height="363" key="GridCell.Tab.2.center" timestamp="1586185362036">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362036" />
+    <state width="1659" height="363" key="GridCell.Tab.2.left" timestamp="1586185362036">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362036" />
+    <state width="1659" height="363" key="GridCell.Tab.2.right" timestamp="1586185362037">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362037" />
+    <state width="1659" height="363" key="GridCell.Tab.3.bottom" timestamp="1586185362039">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362039" />
+    <state width="1659" height="363" key="GridCell.Tab.3.center" timestamp="1586185362038">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362038" />
+    <state width="1659" height="363" key="GridCell.Tab.3.left" timestamp="1586185362038">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362038" />
+    <state width="1659" height="363" key="GridCell.Tab.3.right" timestamp="1586185362038">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1659" height="363" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586185362038" />
     <state x="349" y="164" key="SettingsEditor" timestamp="1585842475281">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -324,10 +405,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585841330379" />
-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1585839921159">
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1586185187824">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585839921158" />
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586185187824" />
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586185187825">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586185187825" />
     <state x="451" y="143" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1585600561282">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -336,13 +421,14 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="623" y="449" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1585583469431" />
-    <state x="506" y="282" width="667" height="486" key="find.popup" timestamp="1585300119994">
+    <state x="506" y="282" width="683" height="486" key="find.popup" timestamp="1586188217179">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="506" y="282" width="667" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585300119994" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1585855602996">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="506" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586188217179" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1586188068940">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1585855602996" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586187182965" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1586188068940" />
   </component>
 </project>

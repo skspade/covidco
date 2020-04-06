@@ -10,8 +10,11 @@ export const getCompany = /* GraphQL */ `
       rating
       logoUrl
       references {
-        heading
-        url
+        items {
+          heading
+          url
+        }
+        nextToken
       }
     }
   }
@@ -30,8 +33,47 @@ export const listCompanys = /* GraphQL */ `
         rating
         logoUrl
         references {
-          heading
-          url
+          nextToken
+        }
+      }
+      nextToken
+    }
+  }
+`;
+export const getReference = /* GraphQL */ `
+  query GetReference($id: ID!) {
+    getReference(id: $id) {
+      heading
+      url
+      company {
+        id
+        name
+        description
+        rating
+        logoUrl
+        references {
+          nextToken
+        }
+      }
+    }
+  }
+`;
+export const listReferences = /* GraphQL */ `
+  query ListReferences(
+    $filter: ModelReferenceFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listReferences(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
         }
       }
       nextToken

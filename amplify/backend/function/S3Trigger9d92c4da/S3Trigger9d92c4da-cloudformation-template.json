@@ -28,12 +28,12 @@
 				"FunctionName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"S3Trigger13027ecd",
+						"S3Trigger9d92c4da",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"S3Trigger13027ecd",
+									"S3Trigger9d92c4da",
 									"-",
 									{
 										"Ref": "env"
@@ -59,8 +59,8 @@
 				"Runtime": "nodejs10.x",
 				"Timeout": "25",
 				"Code": {
-					"S3Bucket": "amplify-covidco-prod-103102-deployment",
-					"S3Key": "amplify-builds/S3Trigger13027ecd-4d507333767279644142-build.zip"
+					"S3Bucket": "amplify-covidco-prod-112629-deployment",
+					"S3Key": "amplify-builds/S3Trigger9d92c4da-65463771516562497467-build.zip"
 				}
 			}
 		},
@@ -70,12 +70,12 @@
 				"RoleName": {
 					"Fn::If": [
 						"ShouldNotCreateEnvResources",
-						"S3Trigger13027ecdLambdaRole13027ecd",
+						"S3Trigger9d92c4daLambdaRole9d92c4da",
 						{
 							"Fn::Join": [
 								"",
 								[
-									"S3Trigger13027ecdLambdaRole13027ecd",
+									"S3Trigger9d92c4daLambdaRole9d92c4da",
 									"-",
 									{
 										"Ref": "env"

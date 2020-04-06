@@ -25,32 +25,39 @@ export const useSubscription = <
   React.useEffect(() => {
     let unsubscribe;
     if (memoConfig) {
+      try{
       const { query, key, variables } = memoConfig;
-      const subscription = API.graphql(graphqlOperation(query, variables));
+      const subscription = API.graphql(graphqlOperation(query, {owner:'s900mhz'}));
       if (subscription instanceof Observable) {
-        const sub = subscription.subscribe({
-          next: payload => {
-            try {
-              const {
-                value: {
-                  data: { [key]: item }
-                }
-              }: {
-                value: { data: { [key: string]: ReturnType } };
-              } = payload;
-
-              update(item);
-            } catch (error) {
-              console.error(`${error.message}`);
-            }
-          }
-        });
-        unsubscribe = () => {
-          sub.unsubscribe();
-        };
+        subscription.subscribe({
+          next: (todoData) => console.log(todoData)
+        })
+        // const sub = subscription.subscribe({
+        //   next: payload => {
+        //     console.log({payload})
+        //     try {
+        //       const {
+        //         value: {
+        //           data: { [key]: item }
+        //         }
+        //       }: {
+        //         value: { data: { [key: string]: ReturnType } };
+        //       } = payload;
+        //
+        //       update(item);
+        //     } catch (error) {
+        //       console.error(`${error.message}`);
+        //     }
+        //   }
+        // });
+        // unsubscribe = () => {
+        //   sub.unsubscribe();
+        // };
+      }}catch (e) {
+        console.error(e)
       }
     }
-    return unsubscribe;
+    // return unsubscribe;
   }, [JSON.stringify(memoConfig)]);
 
   return [item];

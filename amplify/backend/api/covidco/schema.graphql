@@ -14,12 +14,22 @@ type Company
   description: String!
   rating: Int!
   logoUrl: String!
-  references: [Reference!]!
+  references: [Reference!]! @connection(name: "CompanyReferences")
 }
 
 # The url will link to an article and the heading will be that articles headline
-type Reference {
+type Reference
+  @model
+  @auth(
+    rules: [
+      {
+        allow: owner
+        ownerField: "owner"
+        operations: [create, update, delete]
+      }
+    ]
+  ) {
   heading: String!
   url: String!
+  company: Company @connection(name: "CompanyReferences")
 }
-

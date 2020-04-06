@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Table from "./Table";
 import { useQuery } from "../../graphql/hooks/useQuery";
 import { ListCompanysQuery } from "../../API";
@@ -8,6 +8,7 @@ import Toggle from "../Form/Toggle";
 
 const Container = () => {
   const { data, error, loading } = useQuery<ListCompanysQuery>(listCompanys);
+
   const [isToggled, setIsToggled] = useState(false);
   const history = useHistory();
   if (loading) return <div>Loading...</div>;
@@ -17,12 +18,12 @@ const Container = () => {
         <Toggle
           checkedLabel={"Table"}
           uncheckedLabel={"Cards"}
-          checkedOnClick={()=>history.push('/card-deck')}
-          uncheckedOnClick={()=>history.push('/table')}
+          checkedOnClick={() => history.push("/card-deck")}
+          uncheckedOnClick={() => history.push("/table")}
           isToggled={isToggled}
           setToggled={setIsToggled}
         />
-          <Table data={data} />
+        <Table data={data} />
       </div>
     </div>
   );
