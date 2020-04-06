@@ -7,18 +7,17 @@ import { Auth } from "aws-amplify";
 
 interface Props {
   company: {
-    __typename: "Company";
-    id: string;
-    name: string;
-    description: string;
-    rating: number;
-    logoUrl: string;
-    references: Array<{
-      __typename: "Reference";
-      heading: string;
-      url: string;
-    }>;
-  };
+    __typename: "Company",
+    id: string,
+    name: string,
+    description: string,
+    rating: number,
+    logoUrl: string,
+    references:  {
+      __typename: "ModelReferenceConnection",
+      nextToken: string | null,
+    } | null,
+  },
   type: "card" | "row";
 }
 const CompanyRow = ({ company, type }: Props) => {
