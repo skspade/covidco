@@ -2,10 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b826455a-d700-4732-a070-29e0adacbf83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Spinner.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/covidco/schema.graphql" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/covidco/schema.graphql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Admin/CompanyForm/Form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Row.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company/Table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company/Table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/mutations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/mutations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graphql/subscriptions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphql/subscriptions.ts" afterDir="false" />
     </list>
     <list id="3a8f3186-d774-4d33-99a6-2b23fb471a91" name="Do not touch" comment="">
       <change afterPath="$PROJECT_DIR$/src/styles.css" afterDir="false" />
@@ -14,6 +24,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GraphQL File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -123,7 +140,7 @@
       <workItem from="1585838674686" duration="3506000" />
       <workItem from="1585855262150" duration="725000" />
       <workItem from="1585946525429" duration="6442000" />
-      <workItem from="1586201816188" duration="438000" />
+      <workItem from="1586201816188" duration="3012000" />
     </task>
     <task id="LOCAL-00001" summary="feat: Init tailwind">
       <created>1585232939587</created>
@@ -272,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586193609690</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: Auth only on form">
+      <created>1586202562260</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1586202562260</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,38 +324,39 @@
     <MESSAGE value="chore: Combines card and row components" />
     <MESSAGE value="chore: Reinitialize Amplify" />
     <MESSAGE value="fix: Fixes Typing" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: Fixes Typing" />
+    <MESSAGE value="feat: Auth only on form" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Auth only on form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1585361251645">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="494" y="240" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1585361251645" />
-    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1586193609180">
+    <state x="434" y="95" key="CommitChangelistDialog2" timestamp="1586202561855">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1586193609180" />
+    <state x="434" y="95" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1586202561855" />
     <state x="434" y="95" key="CommitChangelistDialog2/0.23.1680.1027@0.23.1680.1027" timestamp="1585239686388" />
     <state x="100" y="100" width="1480" height="850" key="DiffContextDialog" timestamp="1586185187823">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="DiffContextDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1586185187823" />
-    <state width="1659" height="238" key="GridCell.Tab.0.bottom" timestamp="1586193798388">
+    <state width="1659" height="238" key="GridCell.Tab.0.bottom" timestamp="1586204028048">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="238" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586193798388" />
-    <state width="1659" height="238" key="GridCell.Tab.0.center" timestamp="1586193798386">
+    <state width="1659" height="238" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1586204028048" />
+    <state width="1659" height="238" key="GridCell.Tab.0.center" timestamp="1586204028047">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="238" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586193798386" />
-    <state width="1659" height="238" key="GridCell.Tab.0.left" timestamp="1586193798385">
+    <state width="1659" height="238" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1586204028047" />
+    <state width="1659" height="238" key="GridCell.Tab.0.left" timestamp="1586204028046">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="238" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586193798385" />
-    <state width="1659" height="238" key="GridCell.Tab.0.right" timestamp="1586193798387">
+    <state width="1659" height="238" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1586204028046" />
+    <state width="1659" height="238" key="GridCell.Tab.0.right" timestamp="1586204028048">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1659" height="238" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586193798387" />
+    <state width="1659" height="238" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1586204028048" />
     <state width="1659" height="363" key="GridCell.Tab.1.bottom" timestamp="1586185362035">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -412,10 +437,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="506" y="282" width="683" height="486" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586188217179" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1586202238316">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1586265914627">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586202238316" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1586265914627" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1586188068940" />
   </component>
 </project>

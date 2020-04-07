@@ -20,8 +20,13 @@ const Form = ({ defaultValues, handleSubmit, loading }: Props) => {
           <FormikForm className="flex flex-col justify-between items-center max-w-xs">
             <>
               <Input name="name" />
-              <Input name="description" as="textarea" />
-              <div className="my-1">
+              <Input name="category" as="textarea" />
+              <Input name="description" as="select" >
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </Input>
+              <div className="mt-10">
                 <h2 className="font-medium text-gray-800 text-center">
                   References
                 </h2>
@@ -64,7 +69,7 @@ const Form = ({ defaultValues, handleSubmit, loading }: Props) => {
                 }}
               />
             </>
-            <Button color="blue" type="submit" className="mt-5">
+            <Button loading={loading} color="blue" type="submit" className="mt-5">
               Create
             </Button>
           </FormikForm>

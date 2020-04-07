@@ -13,18 +13,18 @@ interface Props {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+    } >,
   },
-  type: "card" | "row";
 }
-const CompanyRow = ({ company, type }: Props) => {
+const CompanyRow = ({ company }: Props) => {
   const { name, description, logoUrl, id } = company;
   const [{ loading }, deleteCompany] = useMutation(mutations.deleteCompany);
 
-  if (type === "card")
     return (
       <div className="rounded w-full flex mb-1 hover:shadow-md zoom">
         <div className="flex p-2">
@@ -47,29 +47,6 @@ const CompanyRow = ({ company, type }: Props) => {
         )}
       </div>
     );
-
-  if (type === "row")
-    return (
-      <div>
-        {loading && <div>Deleting...</div>}
-        <div className="flex flex-col justify-center items-center rounded w-56 p-2 hover:shadow-md zoom">
-          <img className="w-full h-20 border-2 rounded" src={logoUrl} alt="" />
-          <div className=" mt-1 text-gray-900 flex justify-center font-bold w-20">
-            {name}
-          </div>
-          <div className="flex items-center ml-4">{description}</div>
-        </div>
-        <div>
-          <FontAwesomeIcon
-            icon={faTimes}
-            onClick={() => {
-              deleteCompany({ input: { id } });
-            }}
-          />
-        </div>
-      </div>
-    );
-  return null
 };
 
 export default CompanyRow;

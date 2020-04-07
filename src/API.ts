@@ -7,6 +7,13 @@ export type CreateCompanyInput = {
   description: string,
   rating: number,
   logoUrl: string,
+  category: string,
+  references: Array< ReferenceInput >,
+};
+
+export type ReferenceInput = {
+  heading: string,
+  url: string,
 };
 
 export type ModelCompanyConditionInput = {
@@ -14,6 +21,7 @@ export type ModelCompanyConditionInput = {
   description?: ModelStringInput | null,
   rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
+  category?: ModelStringInput | null,
   and?: Array< ModelCompanyConditionInput | null > | null,
   or?: Array< ModelCompanyConditionInput | null > | null,
   not?: ModelCompanyConditionInput | null,
@@ -77,33 +85,11 @@ export type UpdateCompanyInput = {
   description?: string | null,
   rating?: number | null,
   logoUrl?: string | null,
+  category?: string | null,
+  references?: Array< ReferenceInput > | null,
 };
 
 export type DeleteCompanyInput = {
-  id?: string | null,
-};
-
-export type CreateReferenceInput = {
-  heading: string,
-  url: string,
-  referenceCompanyId?: string | null,
-};
-
-export type ModelReferenceConditionInput = {
-  heading?: ModelStringInput | null,
-  url?: ModelStringInput | null,
-  and?: Array< ModelReferenceConditionInput | null > | null,
-  or?: Array< ModelReferenceConditionInput | null > | null,
-  not?: ModelReferenceConditionInput | null,
-};
-
-export type UpdateReferenceInput = {
-  heading?: string | null,
-  url?: string | null,
-  referenceCompanyId?: string | null,
-};
-
-export type DeleteReferenceInput = {
   id?: string | null,
 };
 
@@ -113,6 +99,7 @@ export type ModelCompanyFilterInput = {
   description?: ModelStringInput | null,
   rating?: ModelIntInput | null,
   logoUrl?: ModelStringInput | null,
+  category?: ModelStringInput | null,
   and?: Array< ModelCompanyFilterInput | null > | null,
   or?: Array< ModelCompanyFilterInput | null > | null,
   not?: ModelCompanyFilterInput | null,
@@ -134,14 +121,6 @@ export type ModelIDInput = {
   size?: ModelSizeInput | null,
 };
 
-export type ModelReferenceFilterInput = {
-  heading?: ModelStringInput | null,
-  url?: ModelStringInput | null,
-  and?: Array< ModelReferenceFilterInput | null > | null,
-  or?: Array< ModelReferenceFilterInput | null > | null,
-  not?: ModelReferenceFilterInput | null,
-};
-
 export type CreateCompanyMutationVariables = {
   input: CreateCompanyInput,
   condition?: ModelCompanyConditionInput | null,
@@ -155,15 +134,21 @@ export type CreateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
+      } | null,
+    } >,
   } | null,
 };
 
@@ -180,15 +165,21 @@ export type UpdateCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
+      } | null,
+    } >,
   } | null,
 };
 
@@ -205,90 +196,21 @@ export type DeleteCompanyMutation = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
-  } | null,
-};
-
-export type CreateReferenceMutationVariables = {
-  input: CreateReferenceInput,
-  condition?: ModelReferenceConditionInput | null,
-};
-
-export type CreateReferenceMutation = {
-  createReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
       } | null,
-    } | null,
-  } | null,
-};
-
-export type UpdateReferenceMutationVariables = {
-  input: UpdateReferenceInput,
-  condition?: ModelReferenceConditionInput | null,
-};
-
-export type UpdateReferenceMutation = {
-  updateReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null,
-  } | null,
-};
-
-export type DeleteReferenceMutationVariables = {
-  input: DeleteReferenceInput,
-  condition?: ModelReferenceConditionInput | null,
-};
-
-export type DeleteReferenceMutation = {
-  deleteReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null,
+    } >,
   } | null,
 };
 
@@ -304,15 +226,21 @@ export type GetCompanyQuery = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
+      } | null,
+    } >,
   } | null,
 };
 
@@ -332,60 +260,12 @@ export type ListCompanysQuery = {
       description: string,
       rating: number,
       logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null > | null,
-    nextToken: string | null,
-  } | null,
-};
-
-export type GetReferenceQueryVariables = {
-  id: string,
-};
-
-export type GetReferenceQuery = {
-  getReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null,
-  } | null,
-};
-
-export type ListReferencesQueryVariables = {
-  filter?: ModelReferenceFilterInput | null,
-  limit?: number | null,
-  nextToken?: string | null,
-};
-
-export type ListReferencesQuery = {
-  listReferences:  {
-    __typename: "ModelReferenceConnection",
-    items:  Array< {
-      __typename: "Reference",
-      heading: string,
-      url: string,
-      company:  {
-        __typename: "Company",
-        id: string,
-        name: string,
-        description: string,
-        rating: number,
-        logoUrl: string,
-      } | null,
+      category: string,
+      references:  Array< {
+        __typename: "Reference",
+        heading: string,
+        url: string,
+      } >,
     } | null > | null,
     nextToken: string | null,
   } | null,
@@ -403,15 +283,21 @@ export type OnCreateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
+      } | null,
+    } >,
   } | null,
 };
 
@@ -427,15 +313,21 @@ export type OnUpdateCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
+      } | null,
+    } >,
   } | null,
 };
 
@@ -451,86 +343,20 @@ export type OnDeleteCompanySubscription = {
     description: string,
     rating: number,
     logoUrl: string,
-    references:  {
-      __typename: "ModelReferenceConnection",
-      items:  Array< {
-        __typename: "Reference",
-        heading: string,
-        url: string,
-      } | null > | null,
-      nextToken: string | null,
-    } | null,
-  } | null,
-};
-
-export type OnCreateReferenceSubscriptionVariables = {
-  owner: string,
-};
-
-export type OnCreateReferenceSubscription = {
-  onCreateReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
+    category: string,
+    references:  Array< {
+      __typename: "Reference",
+      heading: string,
+      url: string,
+      company:  {
+        __typename: "Company",
+        id: string,
+        name: string,
+        description: string,
+        rating: number,
+        logoUrl: string,
+        category: string,
       } | null,
-    } | null,
-  } | null,
-};
-
-export type OnUpdateReferenceSubscriptionVariables = {
-  owner: string,
-};
-
-export type OnUpdateReferenceSubscription = {
-  onUpdateReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null,
-  } | null,
-};
-
-export type OnDeleteReferenceSubscriptionVariables = {
-  owner: string,
-};
-
-export type OnDeleteReferenceSubscription = {
-  onDeleteReference:  {
-    __typename: "Reference",
-    heading: string,
-    url: string,
-    company:  {
-      __typename: "Company",
-      id: string,
-      name: string,
-      description: string,
-      rating: number,
-      logoUrl: string,
-      references:  {
-        __typename: "ModelReferenceConnection",
-        nextToken: string | null,
-      } | null,
-    } | null,
+    } >,
   } | null,
 };

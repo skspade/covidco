@@ -12,12 +12,18 @@ export const createCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
-        nextToken
       }
     }
   }
@@ -33,12 +39,18 @@ export const updateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
-        nextToken
       }
     }
   }
@@ -54,74 +66,17 @@ export const deleteCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
-        }
-        nextToken
-      }
-    }
-  }
-`;
-export const createReference = /* GraphQL */ `
-  mutation CreateReference(
-    $input: CreateReferenceInput!
-    $condition: ModelReferenceConditionInput
-  ) {
-    createReference(input: $input, condition: $condition) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
-        }
-      }
-    }
-  }
-`;
-export const updateReference = /* GraphQL */ `
-  mutation UpdateReference(
-    $input: UpdateReferenceInput!
-    $condition: ModelReferenceConditionInput
-  ) {
-    updateReference(input: $input, condition: $condition) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
-        }
-      }
-    }
-  }
-`;
-export const deleteReference = /* GraphQL */ `
-  mutation DeleteReference(
-    $input: DeleteReferenceInput!
-    $condition: ModelReferenceConditionInput
-  ) {
-    deleteReference(input: $input, condition: $condition) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
       }
     }

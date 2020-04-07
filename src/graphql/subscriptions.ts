@@ -9,12 +9,18 @@ export const onCreateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
-        nextToken
       }
     }
   }
@@ -27,12 +33,18 @@ export const onUpdateCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
-        nextToken
       }
     }
   }
@@ -45,65 +57,17 @@ export const onDeleteCompany = /* GraphQL */ `
       description
       rating
       logoUrl
+      category
       references {
-        items {
-          heading
-          url
-        }
-        nextToken
-      }
-    }
-  }
-`;
-export const onCreateReference = /* GraphQL */ `
-  subscription OnCreateReference($owner: String!) {
-    onCreateReference(owner: $owner) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
-        }
-      }
-    }
-  }
-`;
-export const onUpdateReference = /* GraphQL */ `
-  subscription OnUpdateReference($owner: String!) {
-    onUpdateReference(owner: $owner) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
-        }
-      }
-    }
-  }
-`;
-export const onDeleteReference = /* GraphQL */ `
-  subscription OnDeleteReference($owner: String!) {
-    onDeleteReference(owner: $owner) {
-      heading
-      url
-      company {
-        id
-        name
-        description
-        rating
-        logoUrl
-        references {
-          nextToken
+        heading
+        url
+        company {
+          id
+          name
+          description
+          rating
+          logoUrl
+          category
         }
       }
     }

@@ -1,13 +1,14 @@
-import React from "react";
+import React, {ReactNode} from "react";
 import {Field, FieldAttributes} from "formik";
 
 interface Props extends FieldAttributes<any>{
   name: string;
   className?: string;
   type?:string;
+  children?:ReactNode
 }
 
-const Input = ({ name, className,...rest }: Props) => {
+const Input = ({ name, className,children,...rest }: Props) => {
   return (
     <div className='mt-8 relative rounded-md shadow-sm'>
       <label
@@ -20,7 +21,7 @@ const Input = ({ name, className,...rest }: Props) => {
         name={name}
         {...rest}
         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-      />
+      >{children}</Field>
     </div>
   );
 };
